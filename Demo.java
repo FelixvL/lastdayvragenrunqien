@@ -1,11 +1,11 @@
-class Demo{  // CL
-	int a = 14;
+class Demo{  // CT
 	final static public void main(String[] args){
 		System.out.println("We gaan beginnen");
-		new Demo().lopen(a);
+		Float f = 25;
+		new Demo().lopen(f);
 	}
-	void lopen(int c){
-		System.out.println(c);
+	void lopen(Double t){
+		System.out.println(""+t);
 	}
 }
 
