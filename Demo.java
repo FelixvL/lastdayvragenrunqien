@@ -1,10 +1,9 @@
-class Demo{  // CT
+class Demo{  // CV
 	final static public void main(String[] args){
-		System.out.println("We gaan beginnen");
-		Float f = 25;
-		new Demo().lopen(f);
+		
+		new Demo().lopen();
 	}
-	void lopen(Double t){
+	void lopen(double... t){
 		System.out.println(""+t);
 	}
 }
