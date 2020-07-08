@@ -1,20 +1,20 @@
-class Demo{  // OP
+class Demo{  // OF
 	final static public void main(String[] args){	
-		int a = 34;	
-		a = new Middag().gaan(a++).a++;
-		System.out.println("einde:"+a);
+		new Middag();
+		new Avond();
+		System.out.println("Fiets");
 	}
 }
-class Middag{
-	int a = 35;
-	Avond gaan(int b){
-		b = 24;
-		System.out.println("int"+a++);
-		return new Avond();
+class Middag extends Avond{
+	Middag Middag(){
+		System.out.println("middag gemaakt")
 	}
 }
 class Avond{
 	int a = 36;
+	Avond(){
+		System.out.println("avond gemaakt");
+	}
 }
 
 
