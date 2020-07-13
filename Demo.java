@@ -1,4 +1,4 @@
-class Demo{  // AT
+class Demo{  // AL
 	public static void main(String[] args){	
 		DRT drt = new MIN();
 		try{
@@ -23,10 +23,11 @@ class NIM implements DRT{
 }
 class MIN extends NIM{
 	int a = 3;
-	public void a(int a){
+	public void a(int a) throws Exception{
 		System.out.println("a2"+a);
 		a = 8;
 		System.out.println("a2"+a);
+		throw new Exception();
 	}   
 
 }
