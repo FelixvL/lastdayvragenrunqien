@@ -1,4 +1,4 @@
-class Demo{  // RT
+class Demo{  // RS
 	public static void main(String[] args){	
 		System.out.println("Start");
 		Bot bot = new Bot();
@@ -11,7 +11,7 @@ class Demo{  // RT
 
 class Bot{
 	static int kracht = bereken();
-	public int bereken(){
+	public static int bereken(){
 		System.out.println("bereken");
 		return 6;
 	}
