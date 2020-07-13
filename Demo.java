@@ -1,7 +1,7 @@
-class Demo{  // AO
+class Demo{  // AZ
 	public static void main(String[] args){	
 		NIM drt = new MIN();
-		drt.a(4);
+		drt.a(drt.a);
 		System.out.println("regenachtig");
 	}
 	static DRT hoi(DRT drt){
