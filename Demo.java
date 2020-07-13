@@ -1,7 +1,7 @@
-class Demo{  // ZA
+class Demo{  // ZC
 	public static void main(String[] args){	
-		int do = 34;
-		RRR ab = new RRR(do);
+		int w = 34;
+		RRR ab = new RRR(w);
 		System.out.println(ab);
 
 	}
