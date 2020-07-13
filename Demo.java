@@ -1,7 +1,7 @@
-class Demo{  // NL
+class Demo{  // AO
 	public static void main(String[] args){	
-		DRT drt = new NIM();
-		drt.lopen();
+		NIM drt = new MIN();
+		drt.a(4);
 		System.out.println("regenachtig");
 	}
 	static DRT hoi(DRT drt){
@@ -9,12 +9,22 @@ class Demo{  // NL
 	}
 }
 
-class NIM implements DRT{   
+class NIM implements DRT{
+	int a = 2;
+	void a(int a){
+		System.out.println("a"+a);
+	}   
 	public void lopen(){
 		System.out.println("lopen in NIM");
 	}
 }
+class MIN extends NIM{
+	int a = 3;
+	void a(int a){
+		System.out.println("a2"+a);
+	}   
 
+}
 interface DRT{    
 	void lopen() throws Exception;
 }
