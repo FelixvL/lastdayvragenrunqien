@@ -1,6 +1,6 @@
 class Demo{  // YU
 	public static void main(String[] args){	
-		System.out.println( new SSS().rrr );
+		System.out.println( new SSS(7).rrr );
 	}
 }
 
