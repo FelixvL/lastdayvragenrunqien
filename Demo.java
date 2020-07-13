@@ -1,20 +1,16 @@
-class Demo{  // TG
+class Demo{  // IC
 	public static void main(String[] args){	
-		byte r = 56;   
-		new HBR().groeien(r);
-		System.out.println("go");
-
+		hoi(null);
+	}
+	static DRT hoi(DRT drt){
+		return new NIM();
 	}
 }
 
-class HBR{
-	 void groeien(char fer) throws Throwable{
-
-	}
-	void groeien(double fer){
-		System.out.println(fer);
-	}
+class NIM implements DRT{
 
 }
 
+interface DRT{
 
+}
