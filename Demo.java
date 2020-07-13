@@ -1,20 +1,16 @@
-class Demo{  // ZH
+class Demo{  // ZW
 	public static void main(String[] args){	
-		new Demo().groeien(new HBR()).groeien();
+		new HBR().groeien(15.3);
 
-	}
-	 HBR groeien(HBR abc){
-		System.out.println("abc");
-		return abc;
-	}
-	 void groeien(){
-		System.out.println("def");
 	}
 }
 
 class HBR{
-	 void groeien(){
-		System.out.println("ghi");
+	 void groeien(float fer){
+		System.out.println(fer);
+	}
+	void groeien(int fer){
+		System.out.println(fer);
 	}
 
 }
