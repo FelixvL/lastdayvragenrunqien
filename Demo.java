@@ -1,4 +1,4 @@
-class Demo{  // NQ
+class Demo{  // NL
 	public static void main(String[] args){	
 		DRT drt = new NIM();
 		drt.lopen();
