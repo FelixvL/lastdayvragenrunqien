@@ -1,4 +1,4 @@
-class Demo{  // AI
+class Demo{  // AD
 	public static void main(String[] args){	
 		DRT drt = new MIN();
 		drt.a(drt.a);
@@ -27,5 +27,5 @@ class MIN extends NIM{
 }
 interface DRT{ 
 	int a = 7;   
-	void a() throws Exception;
+	void a(int a) throws Exception;
 }
