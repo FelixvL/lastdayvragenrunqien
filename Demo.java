@@ -1,6 +1,8 @@
-class Demo{  // NB
+class Demo{  // NX
 	public static void main(String[] args){	
-		System.out.println("zonnig");
+		DRT drt = new DRT();
+		drt.lopen();
+		System.out.println("regenachtig");
 	}
 	static DRT hoi(DRT drt){
 		return new NIM();
