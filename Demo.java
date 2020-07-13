@@ -1,24 +1,21 @@
-class Demo{  // BM
+class Demo{  // BB
 	public static void main(String[] args){	
-		Bot bot = new Bot();
+		Bot bot = new Bot("Duitsland");
 		bot.kracht = 8;
-		System.out.println( bot.bereken() );
+		Bot bot2 = new Bot("Nederland");
 	}
 
 }
 
 class Bot{
 	static int kracht = 4;
-	public int bereken(){
-		System.out.println("bereken"+this.kracht);
-		return 6;
-	}
 	Bot(String a){
+		System.out.println("in Bot Ervoor");
 		this();
-		System.out.println("in Bot String");
+		System.out.println(a);
 	}
 	Bot(){
-		System.out.println("in Bot");
+		System.out.println("in Bot" + kracht);
 	}
 }
 
