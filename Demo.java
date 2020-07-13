@@ -1,26 +1,21 @@
-class Demo{  // BC
-	Demo(){
-		System.out.println("Bot");
-	}
+class Demo{  // YU
 	public static void main(String[] args){	
-		Bot bot = new Bot("Duitsland");
-		System.out.println(bot2.kracht[2]);
-	}
-
-}
-
-class Bot extends Demo{
-	static int[] kracht = new int[];
-	Bot(String a){
-		this();
-		System.out.println("in Bot Ervoor");
-		System.out.println(a);
-	}
-	Bot(){
-		System.out.println("in Bot" + kracht);
-		kracht = new int[]{5,8,9};
+		System.out.println( new SSS().rrr );
 	}
 }
 
+class RRR{
+	int sss = 4;
+	RRR(int a){
+		System.out.println("in SSS");
+	}
+}
+
+class SSS extends RRR{
+	int rrr = 5;
+	SSS(int b){
+		System.out.println("in RRR");
+	}
+}
 
 
