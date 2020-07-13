@@ -1,6 +1,6 @@
-class Demo{  // AZ
+class Demo{  // AQ
 	public static void main(String[] args){	
-		NIM drt = new MIN();
+		DRT drt = new MIN();
 		drt.a(drt.a);
 		System.out.println("regenachtig");
 	}
