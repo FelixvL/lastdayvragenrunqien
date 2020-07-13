@@ -1,14 +1,15 @@
-class Demo{  // TT
+class Demo{  // TG
 	public static void main(String[] args){	
-		float r = 56;   
+		byte r = 56;   
 		new HBR().groeien(r);
+		System.out.println("go");
 
 	}
 }
 
 class HBR{
 	 void groeien(char fer) throws Throwable{
-		throw new Exception();
+
 	}
 	void groeien(double fer){
 		System.out.println(fer);
