@@ -1,6 +1,6 @@
-class Demo{  // NX
+class Demo{  // NQ
 	public static void main(String[] args){	
-		DRT drt = new DRT();
+		DRT drt = new NIM();
 		drt.lopen();
 		System.out.println("regenachtig");
 	}
