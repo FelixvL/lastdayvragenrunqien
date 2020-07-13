@@ -1,37 +1,41 @@
-class Demo{  // AL
+import java.util.Scanner;
+
+class Demo{  // AZ
+	static Scanner scanner = new Scanner(System.in);
 	public static void main(String[] args){	
-		DRT drt = new MIN();
-		try{
-			drt.a(drt.a);
-			System.out.println("kan niet fout gaan");
-		}catch(Exception e){
-			System.out.println("wordt geprint");
-		}finally{
-			System.out.println("wordt niet geprint");
+		NIM drt;
+		String invoer = scanner.nextLine();
+		if(invoer.equals("a")) {
+			System.out.println("je toetste a");
+			drt = new MIN();
+		}else {
+			System.out.println("je toetste helemaal geen a");
+			drt = new NIM();
 		}
-		System.out.println("blauwe dag");
+		drt.a(drt.a);
+		System.out.println("regenachtig");
 	}
 	static DRT hoi(DRT drt){
 		return new NIM();
 	}
 }
+
 class NIM implements DRT{
-	int a = 2;
-	public void a(int a){
+	int a = 8;
+	void a(int a){
 		System.out.println("a"+a);
 	}   
+	public void lopen(){
+		System.out.println("lopen in NIM");
+	}
 }
 class MIN extends NIM{
 	int a = 3;
-	public void a(int a) throws Exception{
+	void a(int a){
 		System.out.println("a2"+a);
-		a = 8;
-		System.out.println("a2"+a);
-		throw new Exception();
 	}   
 
 }
-interface DRT{ 
-	int a = 7;   
-	void a(int a) throws Exception;
+interface DRT{    
+	void lopen() throws Exception;
 }
