@@ -1,6 +1,6 @@
-class Demo{  // JH
+class Demo{  // RT
 	public static void main(String[] args){	
-		char r = 88;
+		int r = 0b120;   
 		new HBR().groeien(r++);
 		new HBR().groeien(r++);
 
