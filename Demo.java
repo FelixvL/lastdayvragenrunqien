@@ -1,17 +1,16 @@
-class Demo{  // IG
+class Demo{  // IN
 	public static void main(String[] args){	
 		hoi(null);
 		System.out.println("obrigado");
 	}
 	static DRT hoi(DRT drt){
-		return new NIM();
+		return null;
 	}
 }
 
-abstract class NIM implements DRT{   // Koe
-
+abstract class NIM implements DRT{   
 }
 
-interface DRT{    // Eetbaar
+interface DRT{    
 	void lopen();
 }
