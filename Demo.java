@@ -1,19 +1,19 @@
-class Demo{  // ZG
+class Demo{  // ZH
 	public static void main(String[] args){	
 		new Demo().groeien(new HBR()).groeien();
 
 	}
-	static HBR groeien(HBR abc){
+	 HBR groeien(HBR abc){
 		System.out.println("abc");
 		return abc;
 	}
-	static void groeien(){
+	 void groeien(){
 		System.out.println("def");
 	}
 }
 
 class HBR{
-	static void groeien(){
+	 void groeien(){
 		System.out.println("ghi");
 	}
 
