@@ -1,4 +1,4 @@
-class Demo{  // RE
+class Demo{  // TT
 	public static void main(String[] args){	
 		float r = 56;   
 		new HBR().groeien(r);
@@ -7,8 +7,8 @@ class Demo{  // RE
 }
 
 class HBR{
-	 void groeien(char fer){
-		throw new RuntimeException();
+	 void groeien(char fer) throws Throwable{
+		throw new Exception();
 	}
 	void groeien(double fer){
 		System.out.println(fer);
