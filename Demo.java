@@ -1,16 +1,16 @@
-class Demo{  // RF
+class Demo{  // RE
 	public static void main(String[] args){	
-		float r = 0b1___0_1_1_0_1_0_0;   
-		System.out.println("gelukkig niet uitrekenen");
+		float r = 56;   
+		new HBR().groeien(r);
 
 	}
 }
 
 class HBR{
 	 void groeien(char fer){
-		System.out.println(fer);
+		throw new RuntimeException();
 	}
-	void groeien(int fer){
+	void groeien(double fer){
 		System.out.println(fer);
 	}
 
