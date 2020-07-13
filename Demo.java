@@ -1,12 +1,13 @@
-class Demo{  // ZW
+class Demo{  // WF
 	public static void main(String[] args){	
-		new HBR().groeien(15.3);
+		char r = 88;
+		System.out.println(r++ );
 
 	}
 }
 
 class HBR{
-	 void groeien(float fer){
+	 void groeien(char fer){
 		System.out.println(fer);
 	}
 	void groeien(int fer){
