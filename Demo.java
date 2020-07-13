@@ -1,28 +1,22 @@
-class Demo{  // ZC
+class Demo{  // ZG
 	public static void main(String[] args){	
-		int w = 34;
-		RRR ab = new RRR(w);
-		System.out.println(ab);
+		new Demo().groeien(new HBR()).groeien();
 
+	}
+	static HBR groeien(HBR abc){
+		System.out.println("abc");
+		return abc;
+	}
+	static void groeien(){
+		System.out.println("def");
 	}
 }
 
-class RRR{
-	int sss = 4;
-	
-	RRR(){ 
-		System.out.println("hoi is rrr");
+class HBR{
+	static void groeien(){
+		System.out.println("ghi");
 	}
-	RRR(int a){
-		System.out.println("in SSS");
-	}
-}
 
-class SSS extends RRR{
-	int rrr = 5;
-	SSS(int b){
-		System.out.println("in RRR");
-	}
 }
 
 
