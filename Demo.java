@@ -1,8 +1,7 @@
-class Demo{  // RT
+class Demo{  // RB
 	public static void main(String[] args){	
-		int r = 0b120;   
-		new HBR().groeien(r++);
-		new HBR().groeien(r++);
+		int r = 0b1_0_1_1_0_1_0_0;   
+		System.out.println("gelukkig niet uitrekenen");
 
 	}
 }
