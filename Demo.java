@@ -13,7 +13,7 @@ class Demo{  // AZ
 			drt = new NIM();
 		}
 		drt.a(drt.a);
-		System.out.println("regenachtig");
+		System.out.println("regenachtig ");
 	}
 	static DRT hoi(DRT drt){
 		return new NIM();
