@@ -1,7 +1,6 @@
-class Demo{  // MI
+class Demo{  // NB
 	public static void main(String[] args){	
-		hoi(null).lopen();
-		System.out.println("obrigado");
+		System.out.println("zonnig");
 	}
 	static DRT hoi(DRT drt){
 		return new NIM();
@@ -9,11 +8,11 @@ class Demo{  // MI
 }
 
 class NIM implements DRT{   
-	void lopen(){
+	public void lopen(){
 		System.out.println("lopen in NIM");
 	}
 }
 
 interface DRT{    
-	void lopen();
+	void lopen() throws Exception;
 }
