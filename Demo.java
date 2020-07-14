@@ -1,6 +1,6 @@
-class Demo{  // WX
+class Demo{  // WZ
 	public static void main(String[] args){	
-		Brief brief = new Brief("R");
+		Brief brief = new Brief();
 		System.out.println(brief.letter.letter);
 	}
 }
@@ -9,7 +9,7 @@ class Brief{
 
 }
 class Letter{
-	String letter = "T";
+	String letter = "R";
 	Letter(String letter){
 		letter = letter;
 	}
