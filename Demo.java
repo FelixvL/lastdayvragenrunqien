@@ -1,6 +1,6 @@
 
-class Demo{    //   UF
-	public static void main(String[] args){
+class Demo{    //   UJ
+	public static void main(String[] args) throws Exception{
 		System.out.println("run");
 		try{
 		new Fiets().fietsen();
