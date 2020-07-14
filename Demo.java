@@ -1,8 +1,11 @@
-class Demo{  // WY
+class Demo{  // LO
 	public static void main(String[] args){	
 		Brief brief = new Brief();
 		brief.letter = new Letter("Y");
-		System.out.println(brief.letter.letter);
+		System.out.println(schrijven(brief));
+	}
+	static String schrijven(Brief brief){
+		return brief.letter;
 	}
 }
 class Brief{
@@ -12,6 +15,6 @@ class Brief{
 class Letter{
 	String letter = "R";
 	Letter(String letter){
-		letter = letter;
+		this.letter = letter;
 	}
 }
