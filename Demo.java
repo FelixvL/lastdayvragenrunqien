@@ -1,14 +1,14 @@
-class Demo{  // VV
+class Demo{  // VT
 	public static void main(String[] args){	
 		Zwevend v = new Vliegtuig();
 		System.out.println("Au revoir");
 	}
 
 }
-interface Vliegend{
+interface Vliegend extends Zwevend{
 
 }
-interface Zwevend extends Vliegend{}
+interface Zwevend{}
 class Vliegtuig implements Vliegend{
 
 }
