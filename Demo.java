@@ -1,6 +1,6 @@
-class Demo{  // VX
+class Demo{  // VW
 	public static void main(String[] args){	
-		Vliegend v = new ZweefVliegtuig();
+		Zwevend v = new ZweefVliegtuig();
 		System.out.println("Adieu");
 	}
 
@@ -8,12 +8,12 @@ class Demo{  // VX
 interface Vliegend{
 
 }
-
+interface Zwevend{}
 class Vliegtuig implements Vliegend{
 
 }
 
 
-class ZweefVliegtuig extends Vliegtuig implements Vliegend{
+class ZweefVliegtuig extends Vliegtuig implements Vliegend, Zwevend{
 
 }
