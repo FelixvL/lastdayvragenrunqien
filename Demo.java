@@ -1,7 +1,8 @@
 
-class Demo{    //   UT
+class Demo{    //   UX
 	public static void main(String[] args){
 		System.out.println("run");
+		new Fiets().fietsen();
 	}
 }
 class Fiets{
