@@ -1,6 +1,6 @@
-class Demo{  // VG
+class Demo{  // VD
 	public static void main(String[] args){	
-		Zwevend v = new Vliegtuig();
+		Vliegend v = new Vliegtuig();
 		System.out.println(v.wtf().nummer);
 	}
 
