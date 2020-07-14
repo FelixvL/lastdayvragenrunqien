@@ -1,6 +1,7 @@
-class Demo{  // WZ
+class Demo{  // WL
 	public static void main(String[] args){	
 		Brief brief = new Brief();
+		brief.letter = new Letter();
 		System.out.println(brief.letter.letter);
 	}
 }
