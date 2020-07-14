@@ -1,6 +1,10 @@
-class Demo{  // FA
+class Demo{  // FC
 	public static void main(String[] args){	
-		for(int x = 0; x < 25; x++);
-		System.out.println("Adios");
+		int a = 35;
+		if(a == 36)
+			System.out.println("ab");
+			System.out.println("cd");
+		else
+			System.out.println("ef");
 	}
 }
