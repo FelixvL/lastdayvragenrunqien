@@ -1,6 +1,6 @@
-class Demo{  // VD
+class Demo{  // VC
 	public static void main(String[] args){	
-		Vliegend v = new Vliegtuig();
+		Vliegend v = new ZweefVliegtuig();
 		System.out.println(v.wtf().nummer);
 	}
 
@@ -14,11 +14,17 @@ interface Zwevend{
 }
 class Vliegtuig implements Vliegend{
 	String nummer =  "Vliegtuig";
-	public Vliegtuig wtf(){ return new Vliegtuig(); }
+	public Vliegtuig wtf(){ 
+		System.out.println("Vliegtuig : "+ nummer);
+		return new Vliegtuig(); 
+	}
 }
 
 
 class ZweefVliegtuig extends Vliegtuig implements Vliegend, Zwevend{
 	String nummer =  "Zweefvliegtuig";
-	public ZweefVliegtuig wtf(){return null;}
+	public ZweefVliegtuig wtf(){
+		System.out.println("ZweefVliegtuig : "+ nummer);
+		return new ZweefVliegtuig();
+	}
 }
