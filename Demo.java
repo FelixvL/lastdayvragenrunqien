@@ -1,10 +1,12 @@
-class Demo{  // LO
+class Demo{  // LS
 	public static void main(String[] args){	
 		Brief brief = new Brief();
 		brief.letter = new Letter("Y");
 		System.out.println(schrijven(brief));
+		System.out.println(brief.letter.letter);
 	}
-	static String schrijven(Brief brief){
+	static Letter schrijven(Brief brief){
+		brief.letter = new Letter("Z");
 		return brief.letter;
 	}
 }
