@@ -1,12 +1,13 @@
-class Demo{  // LS
+class Demo{  // LF
 	public static void main(String[] args){	
 		Brief brief = new Brief();
 		brief.letter = new Letter("Y");
-		System.out.println(schrijven(brief));
+		System.out.println(schrijven(brief, new Brief()));
 		System.out.println(brief.letter.letter);
 	}
-	static Letter schrijven(Brief brief){
-		brief.letter = new Letter("Z");
+	static Letter schrijven(Brief brief, Brief feirb){
+		feirb.letter = new Letter("Z");
+		brief = feirb;
 		return brief.letter;
 	}
 }
