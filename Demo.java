@@ -1,8 +1,13 @@
 
-class Demo{    //   UX
+class Demo{    //   UF
 	public static void main(String[] args){
 		System.out.println("run");
+		try{
 		new Fiets().fietsen();
+		}catch(FietsError fe){
+			System.out.println("genezen");
+		}
+		System.out.println("Still Alive");
 	}
 }
 class Fiets{
