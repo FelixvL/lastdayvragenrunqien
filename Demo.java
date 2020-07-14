@@ -1,14 +1,15 @@
 
-class Demo{    //   XG
+class Demo{    //   XK
 	public static void main(String[] args){
 		System.out.println("run");
 		try{
-			new Fiets().fietsen();
+			Fiets f = new RaceFiets();
+			f.fietsen();
 			System.out.println("fiets op slot zetten");
-		}catch(FietsError fe){
-			System.out.println("genezen");
 		}catch(RaceFietsError rfe){
 			System.out.println("supersnel genezen");
+		}catch(FietsError fe){
+			System.out.println("genezen");
 		}
 		System.out.println("Still Alive");
 	}
