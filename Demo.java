@@ -1,5 +1,5 @@
 
-class Demo{    //   XK
+class Demo{    //   XM
 	public static void main(String[] args){
 		System.out.println("run");
 		try{
@@ -15,13 +15,15 @@ class Demo{    //   XK
 	}
 }
 class Fiets{
+	int snelheid = 23;
 	void fietsen() throws FietsError{
 		throw new RaceFietsError();
 	}
 }
 class RaceFiets extends Fiets{
-	void fietsen(){
-		System.out.println("fietsen in peloton");
+	int fietsen(int snelheid){
+		System.out.println("fietsen in peloton" + snelheid);
+		return snelheid;
 	}
 }
 
