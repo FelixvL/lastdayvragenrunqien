@@ -1,20 +1,24 @@
 
-class Demo{    //   KA
+class Demo{    //  LA
 	public static void main(String[] args){
-		Weegschaal ws = new Weegschaal();
-		int getal = 25;
-		ws.wegen( getal -> getal + getal );
-		System.out.println("Brons");
+		DDD ddd = new DDD();
+		ddd.eee(  x -> x.xxx() );
 	}
 }
-
-class Weegschaal{
-	void wegen(Voordelambda vdl){
-		int print = vdl.checken(20);  //88
-		System.out.println("print: "+ print);
+class DDD{
+	void eee(ZZZ zzz){
+		System.out.println( zzz.ggg( new XXX() ) );	
 	}
 }
+class XXX{
+	RRR xxx(){
+		return null;
+	}
+}
+class RRR{
 
-interface Voordelambda{
-	int checken(int hup);
+}
+
+interface ZZZ{
+	RRR ggg(XXX xxx);
 }
