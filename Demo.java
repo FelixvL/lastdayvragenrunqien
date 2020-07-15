@@ -1,9 +1,9 @@
 
-class Demo{    //   KR
+class Demo{    //   KS
 	public static void main(String[] args){
 		Weegschaal ws = new Weegschaal();
 	
-		ws.wegen( ()  -> 5 < 4  );
+		ws.wegen( jojoblablago  -> jojoblablago.length < 4  );
 
 		System.out.println("Tafel");
 	}
@@ -17,5 +17,5 @@ class Weegschaal{
 }
 
 interface Voordelambda{
-	boolean checken();
+	boolean checken(String hup);
 }
