@@ -1,19 +1,19 @@
 
-class Demo{    //  LA
+class Demo{    //  LB
 	public static void main(String[] args){
 		DDD ddd = new DDD();
-		ddd.eee(  x -> x.xxx() );
-		System.out.println("Nikkel");
+		ddd.eee(null);
+		System.out.println("Goud");
 	}
 }
-class DDD{
+class DDD extends XXX{
 	void eee(ZZZ zzz){
-		System.out.println( zzz.ggg( new XXX() ) );	
+		System.out.println("hoi");			
 	}
 }
 class XXX{
-	RRR xxx(){
-		return null;
+	void eee(TTT ttt){
+		System.out.println("doei");				
 	}
 }
 class RRR{
@@ -21,5 +21,7 @@ class RRR{
 }
 
 interface ZZZ{
-	RRR ggg(XXX xxx);
+	
+}
+interface TTT extends ZZZ{
 }
