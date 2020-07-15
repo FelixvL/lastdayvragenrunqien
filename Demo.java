@@ -1,10 +1,10 @@
 
-class Demo{    //   KM
+class Demo{    //   KN
 	public static void main(String[] args){
 		Weegschaal ws = new Weegschaal();
 	
 
-		ws.wegen(  t,p -> t < 3   );
+		ws.wegen(  (t,p) -> { return t < 4 || p < 4; } );
 
 
 		System.out.println("Tafel");
@@ -17,7 +17,7 @@ class Demo{    //   KM
 
 class Weegschaal{
 	void wegen(Voordelambda vdl){
-		boolean print = vdl.checken(5);
+		boolean print = vdl.checken(5,3);
 		System.out.println("print: "+ print);
 	}
 
@@ -28,5 +28,5 @@ class Weegschaal{
 
 
 interface Voordelambda{
-	boolean checken(int vt);
+	boolean checken(int vt, int tweede);
 }
