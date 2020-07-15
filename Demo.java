@@ -1,9 +1,9 @@
 
-class Demo{    //   KP
+class Demo{    //   KR
 	public static void main(String[] args){
 		Weegschaal ws = new Weegschaal();
 	
-		ws.wegen(   -> 5 < 4  );
+		ws.wegen( ()  -> 5 < 4  );
 
 		System.out.println("Tafel");
 	}
