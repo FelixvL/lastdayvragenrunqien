@@ -1,17 +1,40 @@
 
-class Demo{    //  LB
+class Demo{    //  LC
 	public static void main(String[] args){
 		DDD ddd = new DDD();
-		ddd.eee(null);
-		System.out.println("Goud");
+		ddd.eee(23);
+		System.out.println("Steen");
 	}
 }
-class DDD extends XXX{
-	void eee(ZZZ zzz){
+class DDD extends XXX{   
+	void eee(int zzz){
 		System.out.println("hoi");			
 	}
+	void eee(Integer zzz){
+		System.out.println("doei");			
+	}
 }
-class XXX{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class XXX{			// Eten
 	void eee(TTT ttt){
 		System.out.println("doei");				
 	}
@@ -20,8 +43,8 @@ class RRR{
 
 }
 
-interface ZZZ{
+interface ZZZ{  // Dier
 	
 }
-interface TTT extends ZZZ{
+interface TTT extends ZZZ{  // Hond
 }
