@@ -1,11 +1,11 @@
 
-class Demo{    //   KT
+class Demo{    //   KU
 	public static void main(String[] args){
 		Weegschaal ws = new Weegschaal();
 	
-		ws.wegen( jojoblablago  -> jojoblablago.length < 4  );
+		ws.wegen( jojoblablago  -> jojoblablago.length() < 4  );
 
-		System.out.println("Boom");
+		System.out.println("Strand");
 	}
 }
 
