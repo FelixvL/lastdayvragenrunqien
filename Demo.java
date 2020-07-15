@@ -1,10 +1,10 @@
 
-class Demo{    //   KW
+class Demo{    //   KX
 	public static void main(String[] args){
 		Weegschaal ws = new Weegschaal();
 		int getal = 25;
-		ws.wegen( y -> y + " of morgen "  );
-		System.out.println("Plant");
+		ws.wegen( y -> y.equals(" of morgen ")  );
+		System.out.println("Ijzer");
 	}
 }
 
