@@ -1,7 +1,7 @@
 
-class Demo{    //   KI
+class Demo{    //   KJ
 	public static void main(String[] args){
-		char getal = new Character('a');
-		System.out.println("Stoel");
+		float getal = new Float("40.5");
+		System.out.println("Bank");
 	}
 }
