@@ -1,32 +1,21 @@
 
-class Demo{    //   KO
+class Demo{    //   KP
 	public static void main(String[] args){
 		Weegschaal ws = new Weegschaal();
 	
-
-		ws.wegen(  int t -> t < 4  );
-
+		ws.wegen(   -> 5 < 4  );
 
 		System.out.println("Tafel");
 	}
 }
 
-
-
-
-
 class Weegschaal{
 	void wegen(Voordelambda vdl){
-		boolean print = vdl.checken(5);
+		boolean print = vdl.checken();
 		System.out.println("print: "+ print);
 	}
-
 }
 
-
-
-
-
 interface Voordelambda{
-	boolean checken(int vt);
+	boolean checken();
 }
