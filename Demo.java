@@ -1,13 +1,14 @@
 
-class Demo{    //  LC
+class Demo{    //  LD
 	public static void main(String[] args){
 		DDD ddd = new DDD();
-		ddd.eee(23);
+		int a = 23;
+		ddd.eee(a);
 		System.out.println("Steen");
 	}
 }
-class DDD extends XXX{   
-	void eee(int zzz){
+class DDD{   
+	void eee(long zzz){
 		System.out.println("hoi");			
 	}
 	void eee(Integer zzz){
@@ -34,17 +35,3 @@ class DDD extends XXX{
 
 
 
-class XXX{			// Eten
-	void eee(TTT ttt){
-		System.out.println("doei");				
-	}
-}
-class RRR{
-
-}
-
-interface ZZZ{  // Dier
-	
-}
-interface TTT extends ZZZ{  // Hond
-}
