@@ -1,17 +1,15 @@
 
-class Demo{    //   KV
+class Demo{    //   KW
 	public static void main(String[] args){
 		Weegschaal ws = new Weegschaal();
-		System.out.println("Meertje");
-		ws.wegen( j  -> {System.out.println("inlamda"+j); return j.length() < 4;}  );
-
-		System.out.println("Strand");
+		int getal = 25;
+		ws.wegen( y -> y + " of morgen "  );
+		System.out.println("Plant");
 	}
 }
 
 class Weegschaal{
 	void wegen(Voordelambda vdl){
-		System.out.println("Zee");
 		boolean print = vdl.checken("vandaag");
 		System.out.println("print: "+ print);
 	}
