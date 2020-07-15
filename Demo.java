@@ -3,6 +3,7 @@ class Demo{    //  LA
 	public static void main(String[] args){
 		DDD ddd = new DDD();
 		ddd.eee(  x -> x.xxx() );
+		System.out.println("Nikkel");
 	}
 }
 class DDD{
